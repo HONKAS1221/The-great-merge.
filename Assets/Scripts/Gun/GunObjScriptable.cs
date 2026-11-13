@@ -18,6 +18,8 @@ public class GunObjScriptable : ScriptableObject
     private MonoBehaviour ActiveMonoBehaviour;
     private GameObject Model;
     float LastShootTime;
+    float InitialClickTime;
+    float StopShootingTime;
     private ParticleSystem ShootSystem;
     private ObjectPool<TrailRenderer> TrailPool;
 
@@ -58,11 +60,22 @@ public class GunObjScriptable : ScriptableObject
     
     public bool shoot()
     {
+        if (Time.time - LastShootTime - ShootCon.FireRate > Time.deltaTime)// This condition checks if the time since the last shot exceeds the fire rate plus the delta time
+        {
+            float lastDuration = Mathf.Clamp(Time.time - LastShootTime - ShootCon.FireRate, 0, Time.deltaTime);
+            float lerpTime = (ShootCon.RecoilRecoverySpeed - (Time.time - StopShootingTime)) / ShootCon.RecoilRecoverySpeed;
+
+            InitialClickTime = Time.time - Mathf.Lerp(0, lastDuration, Mathf.Clamp01(lerpTime)); // This line calculates the initial click time based on the last duration and the recoil recovery speed, ensuring that it is clamped between 0 and delta time.
+        }
+
         if (Time.time > ShootCon.FireRate + LastShootTime)
         {
             LastShootTime = Time.time;
             ShootSystem.Play();
-           
+
+            Vector3 spreadAmount = ShootCon.GetSpread(Time.time - InitialClickTime);
+            Model.transform.forward += Model.transform.TransformDirection(spreadAmount); // Apply the spread to the model's forward direction 
+
             Vector3 shootDirection = ShootSystem.transform.forward
                 + new Vector3(
                     Random.Range(-ShootCon.Spread.x, ShootCon.Spread.x),
@@ -112,6 +125,21 @@ public class GunObjScriptable : ScriptableObject
             return true; // successful shot
         }
         return false; // not fired, waiting on fire rate
+    }
+    
+    public bool Tick(bool WantsToShoot)
+    {
+        Model.transform.localRotation = Quaternion.Lerp(
+            Model.transform.localRotation,
+            Quaternion.Euler(GunSpawnRotation),
+            Time.deltaTime * ShootCon.RecoilRecoverySpeed
+            );
+        if (WantsToShoot)
+        {
+            return shoot();
+        }
+        StopShootingTime = Time.time;
+        return false;
     }
 
     private IEnumerator PlayTrail(Vector3 StartPoint, Vector3 EndPoint, RaycastHit Hit)

@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\CharacterInput.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
+    <Compile Include="Assets\Scripts\Gun\BulletSpreadType.cs" />
     <Compile Include="Assets\Scripts\Jumppad\WallRunning.cs" />
     <Compile Include="Assets\Scripts\Gun\GunType.cs" />
     <Compile Include="Assets\Scripts\Gun\ShootObjConScript.cs" />

@@ -352,6 +352,7 @@
 "Assets/Gun VFX/ExplodeCheck.cs"
 "Assets/Scripts/Climbing/Climbing.cs"
 "Assets/Scripts/Gun.cs"
+"Assets/Scripts/Gun/BulletSpreadType.cs"
 "Assets/Scripts/Gun/GunObjScriptable.cs"
 "Assets/Scripts/Gun/GunType.cs"
 "Assets/Scripts/Gun/ShootObjConScript.cs"

@@ -41,7 +41,7 @@ public class Gun : MonoBehaviour
             isSetup = true;
         }
 
-        if (controls.Player.Shoot.IsPressed() && gunData.shoot())
+        if (gunData.Tick(controls.Player.Shoot.IsPressed())) // Call the Tick method of the GunObjScriptable to handle shooting logic
         {
             SoundFX_Manager.instance.PlaySoundFXClip(gunShotC, transform, 1f); // Play the gun shot sound effect
         }
