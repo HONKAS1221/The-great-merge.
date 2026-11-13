@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B12758A1-4A5F-6E1D-A2CB-0C0769599701}</ProjectGuid>
+    <ProjectGuid>{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,12 +57,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Climbing\Climbing.cs" />
+    <Compile Include="Assets\Scripts\Gun\GunObjScriptable.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\CharacterInput.cs" />
-    <Compile Include="Assets\Scripts\Jumppad\WallRunning.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
+    <Compile Include="Assets\Scripts\Jumppad\WallRunning.cs" />
+    <Compile Include="Assets\Scripts\Gun\GunType.cs" />
+    <Compile Include="Assets\Scripts\Gun\ShootObjConScript.cs" />
+    <Compile Include="Assets\Scripts\Gun\TrailObjConScript.cs" />
     <Compile Include="Assets\Gun VFX\ExplodeCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Gun\SoundFX_Manager.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\PickUpController.cs" />
   </ItemGroup>

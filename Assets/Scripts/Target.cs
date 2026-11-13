@@ -1,39 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    //health of the enemy 
-    public float health = 50f;
+    public float MaxHealth = 20f;
+    private float CurrentHealth;
+    [SerializeField] public AudioClip damageSoundC;
+    [SerializeField] public AudioClip deathSoundC;
 
-    public void TakeDamage(float amount) 
+    public bool HasTakenDamage { get; set; }
+
+
+    void Start()
     {
-        // Remove the damage of the weapon from health
-        health -= amount;
-        Debug.Log(health);
+        CurrentHealth = MaxHealth;
+    }
+    public void takeDamage(float amount)
+    {
 
-        // If enemy health is too low, it dies
-        if (health <= 0f)
+        SoundFX_Manager.instance.PlaySoundFXClip(damageSoundC, transform, 1f);
+
+        CurrentHealth -= amount;
+        Debug.Log(CurrentHealth);
+        if (CurrentHealth <= 0f)
         {
             Die();
+            SoundFX_Manager.instance.PlaySoundFXClip(deathSoundC, transform, 1f);
         }
     }
 
     void Die()
     {
         Destroy(gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

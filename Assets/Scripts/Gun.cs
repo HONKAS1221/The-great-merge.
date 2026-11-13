@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    public GunObjScriptable gunData; // Reference to the GunObjScriptable scriptable object
+    public AudioClip gunShotC;// Reference to the gun shot sound clip
+    private bool isSetup; 
+
+
     private CharacterInput controls;
 
     public float damage = 10f;
@@ -19,6 +24,7 @@ public class Gun : MonoBehaviour
     void OnEnable()
     {
         controls.Enable();
+        isSetup = false; // Reset the setup flag when the gun is enabled
     }
 
     void OnDisable()
@@ -26,47 +32,18 @@ public class Gun : MonoBehaviour
         controls.Disable();
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (controls.Player.Shoot.triggered)
-        {
-            Shoot();
-        }
-    }
-
-    void Shoot()
-    {
-        RaycastHit hit;
-
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-        {
-
-            // We can visualise the ray by this, and it can be easier for you to debug
-
-            Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * hit.distance, Color.red, 1f);
-            Debug.Log(hit.transform.name);
-            Target enemy = hit.transform.GetComponent<Target>();
-
-
-            // If the target script exists, call the function in the target script to cause damage
-            if (enemy != null)
-            {
-                enemy.TakeDamage(damage);
-            }
+        if (!isSetup) 
+        { 
+            gunData.Setup(gameObject, this); // Call the Setup method of the GunObjScriptable to set up the gun with the current game object and this script
+            isSetup = true;
         }
 
-        // else show the lenth of the ray in the Colour red 
-        else { Debug.DrawRay(fpsCam.transform.position, fpsCam.transform.forward * range, Color.red, 1f); }
+        if (controls.Player.Shoot.IsPressed() && gunData.shoot())
+        {
+            SoundFX_Manager.instance.PlaySoundFXClip(gunShotC, transform, 1f); // Play the gun shot sound effect
+        }
     }
-
-
-
-}
+}   
