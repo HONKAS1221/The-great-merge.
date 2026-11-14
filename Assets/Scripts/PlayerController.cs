@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour
 	private CharacterInput controls; // Our controls we defined
     private Vector3 velocity; // To hold our current velocity   
     public Vector2 move; // To hold our move
-    
+
+	[Header("Health Settings")]
+    public float PHealth = 100f;
+    private float currentHealth;
+    private bool isDead = false;
+    private Animator animator;
 
     private CharacterController controller; // Character controller
 
@@ -29,12 +34,40 @@ public class PlayerController : MonoBehaviour
 		controller = GetComponent<CharacterController>();
         wallRun = GetComponent<WallRunning>();
     }
+	private void Start()
+    {
+        currentHealth = PHealth;
+    }
 
     void Update()
     {
+	if (isDead)
+        {
+            return;
+        }
 		PlayerMovement();
 		Grav();
 		Jump();
+    }
+	public void TakeDamage(int damage)
+    {
+        PHealth -= damage;
+        if (PHealth <= 0) Die();
+    }
+
+    private void Die()
+    {
+        isDead = true;
+
+        if (TryGetComponent<PlayerController>(out PlayerController movement))
+        {
+            movement.enabled = false;
+        }
+        if (animator != null)
+        {
+            animator.SetTrigger("isDead");
+        }
+        Invoke("RestartLevel", 2f);
     }
 
     private void Grav()
