@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|c:\\users\\ghadi\\downloads\\firstpersonshooting\\merge\\assets\\scripts\\gun\\gunobjscriptable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\gunobjscriptable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|c:\\users\\ghadi\\downloads\\firstpersonshooting\\merge\\assets\\scripts\\gun\\shootobjconscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\shootobjconscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\assets\\scripts\\gun\\trailobjconscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\trailobjconscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\assets\\scripts\\gun\\soundfx_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun\\soundfx_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79B5BA8C-09C8-7EDA-6EDB-8FCA050CEA17}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GunObjScriptable.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\GunObjScriptable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\GunObjScriptable.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\GunObjScriptable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\GunObjScriptable.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAEwFEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T04:39:57.182Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrailObjConScript.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\TrailObjConScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\TrailObjConScript.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\TrailObjConScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\TrailObjConScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T04:40:37.317Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoundFX_Manager.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\SoundFX_Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\SoundFX_Manager.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\SoundFX_Manager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\SoundFX_Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T04:40:28.382Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Target.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Target.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Target.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Target.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Target.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T04:47:59.887Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T04:48:50.556Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShootObjConScript.cs",
+              "DocumentMoniker": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\ShootObjConScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gun\\ShootObjConScript.cs",
+              "ToolTip": "C:\\Users\\ghadi\\Downloads\\FirstPersonShooting\\Merge\\Assets\\Scripts\\Gun\\ShootObjConScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gun\\ShootObjConScript.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T07:55:15.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
